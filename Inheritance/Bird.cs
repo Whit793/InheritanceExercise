@@ -12,23 +12,26 @@ namespace Inheritance
 
         public int Talons { get; set; }
 
-        public string Call { get; set; }
+        public void Call()
+        {
+            Console.WriteLine("CawCaw");
+        }
 
         public Bird()
         {
 
         }
 
-        public Bird(string species, bool hasvertebrate, bool iscarnivore, int legs, bool hasflight, bool hasbeak, int talons, string call)
+        public Bird(string species, bool hasVertebrate, bool isCarnivore, int legs, bool hasFlight, bool hasBeak, int talons )
         {
             Species = species;
-            HasVertebrate = hasvertebrate;
-            IsCarnivore = iscarnivore;
+            HasVertebrate = hasVertebrate;
+            IsCarnivore = isCarnivore;
             Legs = legs;
-            HasFlight = hasflight;
-            HasBeak = hasbeak;
+            HasFlight = hasFlight;
+            HasBeak = hasBeak;
             Talons = talons;
-            Call = call;
+            
 
 
 
